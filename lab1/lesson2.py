@@ -54,6 +54,7 @@ with open("output.csv", "w", newline='') as writeFile:
             info = "Not a PDF bud!"
 
             if ("PDF" in fileInfo):
+                https://stackoverflow.com/questions/14209214/reading-the-pdf-properties-metadata-in-python
                 fp = open(os.path.join(root,file),"rb")
                 parser = PDFParser(fp)
                 doc = PDFDocument(parser)
